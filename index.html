@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Remove scrollbars from both X and Y axes */
+      html,
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      #mycanvas,
+      .parent {
+        width: 100vh;
+        height: 100vh;
+        background-color: cornsilk;
+        position: absolute;
+        border: 5px solid black;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <canvas id="mycanvas"> </canvas>
+    <div class="parent">
+      <div
+        id="mydiv"
+        style="
+          width: 100px;
+          height: 100px;
+          background-color: brown;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        "
+      ></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
